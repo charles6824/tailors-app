@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailor's App</title>
     <link rel="icon" href="img/main-removebg-preview.png">
+    <link rel="stylesheet" href="/plugins/animate/animate.min.css">
     <link rel="stylesheet" href="plugins/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="preloader"></div>
     <nav class="navbar navbar-dark navbar-expand-md" role="navigation">
         <img src="img/main-removebg-preview.png" alt="" class="pics">
         <a href="#" class="navbar-brand d-none d-md-block">
@@ -79,9 +81,26 @@
             </div>
     </section>
    
-       
+<!-- <script>
+    let preloader = document.getElementById('preloader');
+    if (preloader) {
+      window.addEventListener('load', () => {
+        preloader.remove();
+      });
+    }
+  </script>
+        -->
     
-    <script src="plugins/bootstrap/assets/js/vendor/jquery-slim.min.js"></script>
+    <script src="jquery.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script> 
+    <script src="plugins/wow/wow.min.js"></script>
+    <script>
+        new WOW().init()
+
+        $(window).on('load',function(){
+            $('#preloader').delay(1000).fadeOut('slow',function(){$(this).remove();});
+        });
+    </script>
+  
 </body>
 </html>
