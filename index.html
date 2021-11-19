@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar bg-white navbar-dark  navbar-expand-md" role="navigation">
-        <img src="img/main-removebg-preview.png" alt="" width="5%">
-        <a href="#" class="navbar-brand" style="font-family: fantasy; font-size: 50px;">
+    <nav class="navbar navbar-dark navbar-expand-md" role="navigation">
+        <img src="img/main-removebg-preview.png" alt="" class="pics">
+        <a href="#" class="navbar-brand d-none d-md-block">
             <span style="color: red;">T</span>
             <span style="color: blue;">H</span>
             <span style="color: green;">E</span>
@@ -29,25 +29,30 @@
             <span style="color: orange;">P</span>
             <span style="color: orchid;">P</span>
         </a>
-        <button role="button" class="navbar-toggler" data-toggle="collapse" data-target="#code">
-            <span class="navbar-toggler-icon"></span>
+        <a href="index.html" class="navbar-brand d-md-none mr-auto">
+            <span style="color: red;">T</span>
+             <span style="color: blue;"> T </span>
+             <span style="color: green;"> A </span>
+        </a>
+        <button role="button" class="navbar-toggler" data-toggle="collapse" data-target="#toggle">
+             <span><i class="fa fa-bars text-dark"></i></span>
         </button>
-        <div id="code" class="collapse navbar-collapse">
-            <div class="ml-auto">
-                <a href="#" class="text-danger pr-5" style="font-size: 20px;"><b>Contact Us</b></a>   
-                <a href="#" class="btn btn-download mr-3" style="background-color: red; color: white;"><b>Download</b></a> 
+        <div id="toggle" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <a href="#" class="contact"><b>Contact Us</b></a>   
+                <a href="#" class="btn btn-download"><b>Download</b></a> 
                 </div>                          
         </div>
        </nav> 
        <!-- <hr style="background-color: red;"> -->
        <section class="py-4">
-        <div class="container-fluid">
-            <div class="row pl-5">
+        <div class="container">
+            <div class="row justify-content-center">
                 <div class="col-md-6 d-none d-md-block" style="padding-left: 200px;">
-                             <img src="img/bak.jpg" alt="" class=""  width=70%>
+                             <img src="img/bak.jpg" alt="" class=""  width=100%>
                         </div>
-                <div class="row ml-auto pr-5">
-                <div class="col-md-12">
+                        <div class="col-md-2"></div>
+                <div class="col-md-4">
                     <h5 class="text-dark text-center"><b>If you don't have an account, Please<span><a href="signup.html" class="btn btn-here"><h5>Click Here</h5></a></span>to Sign Up.</b></h5>
                     <div class="card shadow px-4 py-3">
                     <form action="" class="form-controls">
@@ -59,17 +64,19 @@
                              <label for="" class="">Password</label>
                              <input type="password" placeholder="Enter your Password" class="form-control mb-2" required="true" minlength="6" maxlength="10">
                          </div>
-                         <!-- <input type="submit" value="Sign Up" class="form-control"> -->
-                         <div class="col-md-10" style="padding-left: 80px;">
-                             <input type="submit" value="Log In" class="form-control btn btn-light" style="background-color: red; color: white;">
+                         <div class="row justify-content-center">
+                         <div class="col-md-6">
+                             <input type="submit" value="Log In" class="form-control btn btn-light">
                          </div>
+                        </div>
                     </form>
                  </div>
                 </div>
-                </div>
             </div>
-            <marquee style="background-color: red; color: white;" class="mt-5"><b>Please fill in your details correctly... Passwords are case sensitive.</b></marquee>
         </div>
+        <div class="container-fluid">
+            <marquee class="marq mt-5"><b>Please fill in your details correctly... Passwords are case sensitive.</b></marquee>
+            </div>
     </section>
    
        

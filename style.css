@@ -7,8 +7,11 @@
     background-color: white !important;
     border-bottom: 10px solid red;
 }
+.navbar-brand{
+    font-family: fantasy; 
+    font-size: 50px;
+}
 .btn-here{
-    background-color: white;
     color: red;
 }
 .btn-here:hover{
@@ -21,5 +24,72 @@ body{
     background: -webkit-linear-gradient(red 50%, black 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: fantasy; 
+    font-size: 50px;
 }
+.pics{
+    height: 10vh;
+}
+.contact{
+    color: red;
+   padding-right: 2rem;
+    font-size: 17px;
+    padding-top:5px;
+}
+.contact:hover{
+    text-decoration: none;
+    color: red;
+}
+.btn-download{
+    background: red; 
+    color: white;
+    margin-right: 2rem;
+}
+.btn-download:hover{
+    color: white;
+}
+.btn-light{
+    background-color: red; 
+    color: white;
+}
+.marq{
+    background: red; 
+    color: white;
+}
+@media(max-width: 576px){
+    .navbar{
+        border-bottom: 2px solid red;
+    }
+    body{
+        border: 1px solid white;
+    }
+    .navbar-brand{
+        font-family: fantasy; 
+        font-size: 25px;
+    }
+    .pics{
+        height: 5vh;
+    }
+    .btn-download{
+        background: white;
+        color: red;
+        margin-left:23rem;
+    }
+    .btn-download:hover{
+        color: red;
+    }
+    .contact{
+        color: red;
+        margin-left:383px;
+        font-size: 15px;
+    }
+    .navbar-brands{
+        background: -webkit-linear-gradient(red 50%, black 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: fantasy; 
+        font-size: 25px;
+    }
 
+    
+}
