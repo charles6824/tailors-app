@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: white !important;
+    border-bottom: 10px solid red;
+}
+.btn-here{
+    background-color: white;
+    color: red;
+}
+.btn-here:hover{
+    color: orange;
+}
+body{
+    border: 10px solid red;
+}
+.navbar-brands{
+    background: -webkit-linear-gradient(red 50%, black 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
