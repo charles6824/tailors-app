@@ -73,14 +73,14 @@ body{
     .btn-download{
         background: white;
         color: red;
-        margin-left:23rem;
+        margin-left:18rem;
     }
     .btn-download:hover{
         color: red;
     }
     .contact{
         color: red;
-        margin-left:383px;
+        margin-left:303px;
         font-size: 15px;
     }
     .navbar-brands{
